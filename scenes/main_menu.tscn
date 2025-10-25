@@ -685,21 +685,21 @@ position = Vector2(656, 369)
 scale = Vector2(0.757813, 0.757813)
 sprite_frames = SubResource("SpriteFrames_7b55j")
 autoplay = "default"
-frame_progress = 0.191752
+frame_progress = 0.119591
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 position = Vector2(496, 381)
 scale = Vector2(0.758, 0.758)
 sprite_frames = SubResource("SpriteFrames_svtp6")
 autoplay = "default"
-frame_progress = 0.0444734
+frame_progress = 0.972305
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
 position = Vector2(352, 220)
 scale = Vector2(0.758, 0.758)
 sprite_frames = SubResource("SpriteFrames_1acrt")
 autoplay = "default"
-frame_progress = 0.557183
+frame_progress = 0.485
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
