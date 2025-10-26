@@ -1,7 +1,8 @@
-[gd_scene load_steps=43 format=4 uid="uid://c4yumr4l4f3ul"]
+[gd_scene load_steps=44 format=4 uid="uid://c4yumr4l4f3ul"]
 
 [ext_resource type="Script" uid="uid://cogcwjdik715v" path="res://scripts/main_menu.gd" id="1_l6cm7"]
 [ext_resource type="Texture2D" uid="uid://crt8o8t66tvvy" path="res://assets/Map Tielset for ground.png" id="2_ekxnf"]
+[ext_resource type="FontFile" uid="uid://dlm0tkiwct7ft" path="res://assets/Silkscreen/slkscr.ttf" id="2_lgwnu"]
 [ext_resource type="Texture2D" uid="uid://sgl2yf8sfi8o" path="res://assets/Map Tielset.png" id="3_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://bl4kgjp3ecuu5" path="res://assets/sky/Clouds/Clouds 1/1.png" id="3_wu84c"]
 [ext_resource type="Texture2D" uid="uid://b3sdpjodpjnr3" path="res://assets/sky/Clouds/Clouds 1/4.png" id="4_tbmy8"]
@@ -640,6 +641,7 @@ offset_left = 510.0
 offset_top = 200.0
 offset_right = 680.0
 offset_bottom = 245.0
+theme_override_fonts/font = ExtResource("2_lgwnu")
 theme_override_font_sizes/font_size = 40
 text = "SEKRO"
 horizontal_alignment = 1
@@ -712,6 +714,17 @@ stream = ExtResource("9_jk1qb")
 
 [node name="button" type="AudioStreamPlayer2D" parent="sound"]
 stream = ExtResource("10_5dd4i")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 617.0
+offset_top = 183.0
+offset_right = 723.0
+offset_bottom = 206.0
+rotation = 0.349066
+theme_override_colors/font_color = Color(0.737255, 0.227451, 0, 1)
+theme_override_fonts/font = ExtResource("2_lgwnu")
+theme_override_font_sizes/font_size = 12
+text = "Autumn ark !!"
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
