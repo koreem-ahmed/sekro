@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://cfrivkf3o5h6m"]
+[gd_scene load_steps=15 format=4 uid="uid://cfrivkf3o5h6m"]
 
 [ext_resource type="Texture2D" uid="uid://sgl2yf8sfi8o" path="res://assets/Map Tielset.png" id="1_1gtdl"]
 [ext_resource type="Texture2D" uid="uid://bl4kgjp3ecuu5" path="res://assets/sky/Clouds/Clouds 1/1.png" id="2_ewkw1"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dnnhfrja6re0f" path="res://scenes/win.tscn" id="5_f1prt"]
 [ext_resource type="PackedScene" uid="uid://br5iyp3cwtytf" path="res://scenes/kill_zone.tscn" id="5_fxbwu"]
 [ext_resource type="PackedScene" uid="uid://cbawvdpcv330q" path="res://scenes/back.tscn" id="6_f1prt"]
+[ext_resource type="PackedScene" uid="uid://dlr6b6dnrj1n4" path="res://scenes/bird_enemy.tscn" id="7_sw35s"]
+[ext_resource type="PackedScene" uid="uid://8fd1wm21i3n6" path="res://scenes/flame_wizard.tscn" id="8_hdvpg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f1prt"]
 texture = ExtResource("1_1gtdl")
@@ -249,9 +251,6 @@ sources/1 = SubResource("TileSetAtlasSource_sw35s")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_f1prt"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uiu6r"]
-size = Vector2(717, 70)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sw35s"]
 size = Vector2(16, 32)
 
@@ -270,7 +269,7 @@ tile_map_data = PackedByteArray("AAAMAPz/AQAAAAAAAAAMAAMAAQAAAAAAAAAwAPz/AQAAAAA
 tile_set = SubResource("TileSet_hdvpg")
 
 [node name="player" parent="." instance=ExtResource("3_fxbwu")]
-position = Vector2(37, -23)
+position = Vector2(52, -23)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(4, 4)
@@ -287,13 +286,18 @@ shape = SubResource("WorldBoundaryShape2D_f1prt")
 [node name="win" parent="." instance=ExtResource("5_f1prt")]
 position = Vector2(2034, -11)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="win"]
-position = Vector2(292.5, 27)
-shape = SubResource("RectangleShape2D_uiu6r")
+[node name="bird enemy" parent="." instance=ExtResource("7_sw35s")]
+position = Vector2(1268, -56)
+
+[node name="flame wizard" parent="." instance=ExtResource("8_hdvpg")]
+position = Vector2(1520, -49)
+
+[node name="bird enemy2" parent="." instance=ExtResource("7_sw35s")]
+position = Vector2(1770, -56)
 
 [node name="back" parent="." instance=ExtResource("6_f1prt")]
-position = Vector2(7, -21)
+position = Vector2(7, -19)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="back"]
-position = Vector2(1, 5)
+position = Vector2(1, 3)
 shape = SubResource("RectangleShape2D_sw35s")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://br5iyp3cwtytf"]
+[gd_scene load_steps=3 format=3 uid="uid://br5iyp3cwtytf"]
 
 [ext_resource type="Script" uid="uid://04s8mp620pty" path="res://scripts/kill_zone.gd" id="1_kebdr"]
+[ext_resource type="AudioStream" uid="uid://bb7jxyyo464nk" path="res://assets/sounds/male_hurt7-48124.mp3" id="2_l4ff3"]
 
 [node name="kill zone" type="Area2D"]
 collision_layer = 128
@@ -8,7 +9,10 @@ collision_mask = 128
 script = ExtResource("1_kebdr")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.6
+wait_time = 0.7
+
+[node name="die" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_l4ff3")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,11 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbawvdpcv330q"]
+[gd_scene load_steps=3 format=3 uid="uid://cbawvdpcv330q"]
 
 [ext_resource type="Script" uid="uid://bsxmo8y3cxqlp" path="res://scripts/back.gd" id="1_rvrcs"]
+[ext_resource type="AudioStream" uid="uid://bdu3jwtdmusv8" path="res://assets/sounds/opening-door-411632.mp3" id="2_ymxry"]
 
 [node name="back" type="Area2D"]
+collision_layer = 32
+collision_mask = 32
 script = ExtResource("1_rvrcs")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 
+[node name="door" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_ymxry")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
