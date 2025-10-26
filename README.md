@@ -1,8 +1,7 @@
 # sekro
-this is my game sekro which you play in the body of a wise monk who spend his life teaching martial arts and practicing it. the story begins in the fall or the autumn the treea were red as usual but there was a radiance or some sort of rediation that make the buildings have many versis as you play you inter many houses and biuldings. some of the buildings are fall tower, fall bunker and fall season. so go adventure and make the monk the hero of the story.
+This is my game Sekiro, which you play in the body of a wise monk who spent his life teaching and practicing martial arts. The story begins in the fall, or the autumn. The trees were red as usual, but there was a radiance, or some sort of radiation, that made the buildings have many verses. As you play, you enter many houses and buildings. Some of the buildings are Fall Tower, Fall Bunker, and Fall Season. So go adventure and make the monk the hero of the story.
 
-i added sounds, backgrounds, and fighting styles this was my first time to do this and it was amazing fr. also i made the assets like the trees.
-i added the opening screen and the cover.
+I added sounds, backgrounds, and fighting styles. This was my first time doing this, and it was amazing fr. Also, I made the assets, like the trees. I added the opening screen and the cover.
 
 ## controls
 <- , -> , a , d , for moving left and right.
